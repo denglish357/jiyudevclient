@@ -1,5 +1,31 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="preloader">
+        <span class="preloader-spin"></span>
+    </div>
+    <TopNav/>
   </div>
 </template>
+
+<script>
+import TopNav from '@/components/home/TopNav.vue'
+
+
+
+export default {
+  name: 'About',
+  components: { 
+    TopNav
+},
+methods:{
+
+}
+}  
+  
+</script>
+
+
+<style scoped>
+  
+  
+</style>
