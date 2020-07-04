@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+   <Head/>
     <div class="preloader">
         <span class="preloader-spin"></span>
     </div>
@@ -18,6 +19,7 @@
 
 <script>
 // @ is an alias to /src
+import Head from '@/mixins/Head.js'
 import TopNav from '@/components/home/TopNav.vue'
 import Hero from '@/components/home/Hero.vue'
 import BrandArea from '@/components/home/BrandArea.vue'
@@ -30,6 +32,11 @@ import Footer from '@/components/home/Footer.vue'
 
 export default {
   name: 'Home',
+    data() {
+        return {
+            mixins: [Head]
+        }
+    },
   components: {
     TopNav,
     Hero,
@@ -39,6 +46,7 @@ export default {
     Testimonial,
     FaqArea,
     Footer
-  }
+  },
+
 }
 </script>
