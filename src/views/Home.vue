@@ -34,7 +34,7 @@ export default {
   name: 'Home',
     data() {
         return {
-            mixins: [Head]
+
         }
     },
   components: {
@@ -47,6 +47,6 @@ export default {
     FaqArea,
     Footer
   },
-
+ mixins: [Head]
 }
 </script>

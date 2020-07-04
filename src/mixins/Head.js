@@ -17,12 +17,11 @@ data: function () {
     // Meta tags
     meta: [
       { name: 'application-name', content: 'Name of my application' },
-      { name: 'description', content: 'A description of the page', id: 'desc' }
+      { name: 'description', content: 'A fucking description of the page', id: 'desc' }
     ],
     // link tags
     link: [
-      { rel: 'canonical', href: 'http://example.com/#!/contact/', id: 'canonical' },
-      { rel: 'author', href: 'author', undo: false }, // undo property - not to remove the
+      { rel: 'text/css', href: '@/assets/css/main.css', }
     ],
     script: [
       { type: 'text/javascript', src: 'cdn/to/script.js', async: true, body: true}, // Insert in body
@@ -31,7 +30,7 @@ data: function () {
       // ...
     ],
     style: [
-      { type: 'text/css', inner: 'body { background-color: #000; color: #fff}', undo: false },
+      { type: 'text/css', inner: 'body { background-color: #fff; color: #fff}', undo: false },
       // ...
     ]
   }
