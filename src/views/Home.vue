@@ -4,7 +4,7 @@
     <div class="preloader">
         <span class="preloader-spin"></span>
     </div>
-    
+    <myComponent />
     <TopNav />
     <Hero />
     <BrandArea />
@@ -19,7 +19,7 @@
 
 <script>
 // @ is an alias to /src
-import Head from '@/mixins/Head.js'
+import myComponent from '@/components/head.js'
 import TopNav from '@/components/home/TopNav.vue'
 import Hero from '@/components/home/Hero.vue'
 import BrandArea from '@/components/home/BrandArea.vue'
@@ -32,12 +32,8 @@ import Footer from '@/components/home/Footer.vue'
 
 export default {
   name: 'Home',
-    data() {
-        return {
-
-        }
-    },
   components: {
+    myComponent,
     TopNav,
     Hero,
     BrandArea,
@@ -47,6 +43,8 @@ export default {
     FaqArea,
     Footer
   },
- mixins: [Head]
+ mount () {
+ }//,
+   // mixins: [Head]
 }
 </script>

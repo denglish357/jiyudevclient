@@ -1,13 +1,8 @@
-
-
-
-
-
-  export default {
+export default {
 
 data: function () {
-    return {
-
+   return {
+      title: 'My Title'
     }
   },
   head: {
@@ -21,10 +16,11 @@ data: function () {
     ],
     // link tags
     link: [
-      { rel: 'text/css', href: '@/assets/css/main.css', }
+      { rel: 'text/css', href: '@assets/css/bootstrap.min.css', },
+      { rel: 'text/css', href: '@assets/css/main.css', }
     ],
     script: [
-      { type: 'text/javascript', src: 'cdn/to/script.js', async: true, body: true}, // Insert in body
+      { type: 'text/javascript', src: 'assets/js/active.js', async: true, body: true}, // Insert in body
       // with shorthand
       { t: 'application/ld+json', i: '{ "@context": "http://schema.org" }' },
       // ...
