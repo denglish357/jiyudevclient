@@ -1,9 +1,7 @@
 <template>
   <div class="home">
    <Head/>
-    <div class="preloader">
-        <span class="preloader-spin"></span>
-    </div>
+
     <myComponent />
     <TopNav />
     <Hero />
@@ -13,13 +11,11 @@
     <Testimonial />
     <FaqArea />
     <Footer />
-    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import myComponent from '@/components/head.js'
 import TopNav from '@/components/home/TopNav.vue'
 import Hero from '@/components/home/Hero.vue'
 import BrandArea from '@/components/home/BrandArea.vue'
@@ -33,7 +29,6 @@ import Footer from '@/components/home/Footer.vue'
 export default {
   name: 'Home',
   components: {
-    myComponent,
     TopNav,
     Hero,
     BrandArea,
@@ -43,8 +38,28 @@ export default {
     FaqArea,
     Footer
   },
- mount () {
- }//,
-   // mixins: [Head]
+    mounted() {
+    const plugin = document.createElement("script");
+    plugin.setAttribute(
+      "src",
+      "@../assets/js/active.js"
+    );
+    plugin.setAttribute(
+      "type",
+      "text/javascript"
+    );
+    plugin.async = true;
+    document.head.appendChild(plugin);
+  }
 }
 </script>
+
+
+<style lang="text/css" scoped>
+    import '../assets/css/main.css'
+    import '../assets/css/barfiller.css'
+    import'../assets/css/font-awesome.min.css'
+    import '../assets/css/slicknav.css'
+    import '../assets/css/owl.carousel.css'
+    import '../assets/css/bootstrap.min.css'
+</style>

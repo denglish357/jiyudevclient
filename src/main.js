@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 import Vuehead from 'vue-head'
 Vue.use(Vuehead)
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
 Vue.config.productionTip = false
 
 new Vue({
