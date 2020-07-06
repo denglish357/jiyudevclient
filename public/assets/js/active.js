@@ -1,5 +1,3 @@
-alert("it works")
-
 var document,
     window;
 (function ($) {
@@ -37,10 +35,10 @@ var document,
                 $(this).toggleClass('active');
             });
         });
-        
+
         flat.windowHeight = $(window).height();
         $('.window-height').css('min-height',flat.windowHeight);
-        
+
         flat.searchIcon = $('.search-icon');
         flat.searchForm = $('.search-form');
         flat.searchIcon.on('click', function() {
@@ -60,7 +58,7 @@ var document,
 
     flat.wlPlugins = () => {
         if ($.fn.isotope) {
-            
+
             flat.portfolio_isotope = $('.portfolio-isotope');
             flat.portfolio_menu = $('.isotope-menu li');
             flat.portfolio_isotope.isotope({

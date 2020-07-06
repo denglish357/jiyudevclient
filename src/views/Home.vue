@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-   <Head/>
-
-    <myComponent />
     <TopNav />
     <Hero />
     <BrandArea />
@@ -24,9 +21,9 @@ import PortfolioArea from '@/components/home/PortfolioArea.vue'
 import Testimonial from '@/components/home/Testimonial.vue'
 import FaqArea from '@/components/home/FaqArea.vue'
 import Footer from '@/components/home/Footer.vue'
-import Vue from '../main.js'
+//import Vue from '../main.js'
 
-Vue.loadScript("../js/jquery-2.2.4.min.js")
+//Vue.loadScript("../js/jquery-2.2.4.min.js")
 
 
 export default {
@@ -41,15 +38,12 @@ export default {
     FaqArea,
     Footer
   },
-    mounted() {
+    created() {
+
     const plugin = document.createElement("script");
     plugin.setAttribute(
       "src",
-      "@../assets/js/active.js"
-    );
-    plugin.setAttribute(
-      "type",
-      "text/javascript"
+      "./assets/js/test.js"
     );
     plugin.async = true;
     document.head.appendChild(plugin);
