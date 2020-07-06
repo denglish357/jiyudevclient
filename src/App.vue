@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <TopNav></TopNav>
-    <router-view/>
-  </div>
+    <div id="app">
+        <TopNav v-show="$route.name!=='comingSoon'"></TopNav>
+        <router-view />
+    </div>
 </template>
 <style>
 </style>
@@ -11,14 +11,14 @@
 
 
 <script>
-import TopNav from '@/components/home/TopNav.vue'
+    import TopNav from '@/components/home/TopNav.vue'
 
 
     export default {
-        name:'app',
+        name: 'app',
         components: {
             TopNav
-        }
+        },
     }
 
 </script>

@@ -1,37 +1,32 @@
 <template>
-    <div class="about">
+    <div class="contact">
         <PreLoader />
         <PageTitle />
-        <AboutArea />
-        <SkillArea />
-        <TabsArea />
-        <SpB />
+        <ContactArea />
+        <GoogleMap />
         <Footer />
     </div>
 </template>
+
 
 <script>
     import PreLoader from '@/components/home/PreLoader'
     import MyComponent from '@/mixins/Head.js'
     import PageTitle from '@/components/about/PageTitle.vue'
-    import AboutArea from '@/components/about/AboutArea.vue'
-    import SkillArea from '@/components/about/SkillArea.vue'
-    import TabsArea from '@/components/about/TabsArea.vue'
-    import SpB from '@/components/about/SpB.vue'
+    import ContactArea from '@/components/contact/ContactArea.vue'
+    import GoogleMap from '@/components/contact/GoogleMap.vue'
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'About',
-        mixins: [MyComponent],
+        name: 'Portfolio',
         components: {
             PreLoader,
             PageTitle,
-            AboutArea,
-            SkillArea,
-            TabsArea,
-            SpB,
+            ContactArea,
+            GoogleMap,
             Footer
         },
+        mixins: [MyComponent]
     }
 
 </script>

@@ -33,24 +33,24 @@
                                 </li>
                <li><router-link to="/about">About</router-link></li>
 
-<li><a href="portfolio.html">Portfolio</a></li>
+<li><router-link to="/portfolio">Portfolio</router-link></li>
                                 <li class="has-child">
                                     <a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="404.html">404</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="career.html">Career</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="testimonial.html">Testimonial</a></li>
+                                        <li><router-link to="/about">About</router-link></li>
+                                        <li><router-link to="/career">Career</router-link></li>
+                                        <li><router-link to="/coming-soon">Coming Soon</router-link></li>
+                                        <li><router-link to="/contact">Contact</router-link></li>
+                                        <li><router-link to="/faq">Faq</router-link></li>
+                                        <li><router-link to="/portfolio">Portfolio</router-link></li>
+                                        <li><router-link to="/pricing">Pricing</router-link></li>
+                                        <li><router-link to="/service">Service</router-link></li>
+                                        <li><router-link to="/team">Team</router-link></li>
+                                        <li><router-link to="/testimonial">Testimonial</router-link></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><router-link to="/contact">Contact</router-link></li>
                             </ul>
                         </nav>
                     </div>

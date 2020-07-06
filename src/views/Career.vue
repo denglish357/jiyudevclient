@@ -1,11 +1,9 @@
 <template>
-    <div class="about">
+    <div class="career">
         <PreLoader />
         <PageTitle />
-        <AboutArea />
-        <SkillArea />
-        <TabsArea />
-        <SpB />
+        <ServiceArea />
+        <GalleryArea />
         <Footer />
     </div>
 </template>
@@ -14,22 +12,18 @@
     import PreLoader from '@/components/home/PreLoader'
     import MyComponent from '@/mixins/Head.js'
     import PageTitle from '@/components/about/PageTitle.vue'
-    import AboutArea from '@/components/about/AboutArea.vue'
-    import SkillArea from '@/components/about/SkillArea.vue'
-    import TabsArea from '@/components/about/TabsArea.vue'
-    import SpB from '@/components/about/SpB.vue'
+    import ServiceArea from '@/components/career/ServiceArea.vue'
+    import GalleryArea from '@/components/career/GalleryArea.vue'
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'About',
+        name: 'Career',
         mixins: [MyComponent],
         components: {
             PreLoader,
             PageTitle,
-            AboutArea,
-            SkillArea,
-            TabsArea,
-            SpB,
+            ServiceArea,
+            GalleryArea,
             Footer
         },
     }
