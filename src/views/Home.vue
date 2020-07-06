@@ -1,7 +1,7 @@
 <template>
   <div class="home">
    <PreLoader />
-    <TopNav />
+    <!-- <TopNav /> -->
     <Hero />
     <BrandArea />
     <ServiceArea />
@@ -15,7 +15,7 @@
 <script>
 // @ is an alias to /src
 import PreLoader from '@/components/home/PreLoader'
-import TopNav from '@/components/home/TopNav.vue'
+//import TopNav from '@/components/home/TopNav.vue'
 import MyComponent from '@/mixins/Head.js'
 import Hero from '@/components/home/Hero.vue'
 import BrandArea from '@/components/home/BrandArea.vue'
@@ -29,7 +29,7 @@ export default {
   name: 'Home',
   components: {
     PreLoader,
-    TopNav,
+    //TopNav,
     Hero,
     BrandArea,
     ServiceArea,
@@ -40,7 +40,7 @@ export default {
   },
     created() {
   },
- mixins:[MyComponent]
+mixins:[MyComponent]
 }
 </script>
 

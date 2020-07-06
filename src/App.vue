@@ -1,9 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-    </div>
+    <TopNav></TopNav>
     <router-view/>
   </div>
 </template>
 <style>
 </style>
+
+
+
+
+<script>
+import TopNav from '@/components/home/TopNav.vue'
+
+
+    export default {
+        name:'app',
+        components: {
+            TopNav
+        }
+    }
+
+</script>

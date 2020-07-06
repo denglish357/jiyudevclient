@@ -34,7 +34,7 @@ module.exports  = {
         { type: 'text/javascript', src: './assets/js/active.js', async: true, body: true},
     ],
     style: [
-      { type: 'text/css', inner: 'body { background-color: #000; color: #fff}', undo: false },
+      { type: 'text/css', inner: 'body { background-color: #fff; color: #000}', undo: false },
       // ...
     ]
   }
