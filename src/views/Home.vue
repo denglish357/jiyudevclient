@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+   <PreLoader />
     <TopNav />
     <Hero />
     <BrandArea />
@@ -8,12 +9,14 @@
     <Testimonial />
     <FaqArea />
     <Footer />
-  </div>
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import PreLoader from '@/components/home/PreLoader'
 import TopNav from '@/components/home/TopNav.vue'
+import MyComponent from '@/mixins/Head.js'
 import Hero from '@/components/home/Hero.vue'
 import BrandArea from '@/components/home/BrandArea.vue'
 import ServiceArea from '@/components/home/ServiceArea.vue'
@@ -21,14 +24,11 @@ import PortfolioArea from '@/components/home/PortfolioArea.vue'
 import Testimonial from '@/components/home/Testimonial.vue'
 import FaqArea from '@/components/home/FaqArea.vue'
 import Footer from '@/components/home/Footer.vue'
-//import Vue from '../main.js'
-
-//Vue.loadScript("../js/jquery-2.2.4.min.js")
-
 
 export default {
   name: 'Home',
   components: {
+    PreLoader,
     TopNav,
     Hero,
     BrandArea,
@@ -39,15 +39,8 @@ export default {
     Footer
   },
     created() {
-
-    const plugin = document.createElement("script");
-    plugin.setAttribute(
-      "src",
-      "./assets/js/test.js"
-    );
-    plugin.async = true;
-    document.head.appendChild(plugin);
-  }
+  },
+ mixins:[MyComponent]
 }
 </script>
 

@@ -1,31 +1,34 @@
 <template>
-  <div class="about">
-    <div class="preloader">
-        <span class="preloader-spin"></span>
+    <div class="about">
+        <PreLoader />
+        <TopNav />
     </div>
-    <TopNav/>
-  </div>
 </template>
 
 <script>
-import TopNav from '@/components/home/TopNav.vue'
+    import PreLoader from '@/components/home/PreLoader'
+    import TopNav from '@/components/home/TopNav.vue'
+    import MyComponent from '@/mixins/Head.js'
 
+    export default {
+        name: 'About',
+        mixins:[MyComponent],
+        components: {
+            PreLoader,
+            TopNav
+        },
 
+    }
 
-export default {
-  name: 'About',
-  components: { 
-    TopNav
-},
-methods:{
-
-}
-}  
-  
 </script>
 
 
-<style scoped>
-  
-  
+<style lang="text/css" scoped>
+    import '../assets/css/main.css'
+    import '../assets/css/barfiller.css'
+    import'../assets/css/font-awesome.min.css'
+    import '../assets/css/slicknav.css'
+    import '../assets/css/owl.carousel.css'
+    import '../assets/css/bootstrap.min.css'
+
 </style>
