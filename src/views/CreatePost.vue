@@ -1,15 +1,17 @@
 <template>
     <div class="create-post">
         <h1>Create an blog</h1>
-        <form @submit="_submitPost">
-
-            <v-col cols="12" md="6">
+        <v-form @submit="_submitPost">
+            <v-col cols="12" sm="6" md="10" @change="_setForm">
+                <v-text-field solo label="Main Title"></v-text-field>
+            </v-col>
+            <v-col cols="12" md="10">
                 <v-textarea solo name="" label="Post Description" @change="_setForm"></v-textarea>
             </v-col>
 
             <br>
             <v-btn type="submit" color="success">Submit</v-btn>
-        </form>
+        </v-form>
 
     </div>
 </template>

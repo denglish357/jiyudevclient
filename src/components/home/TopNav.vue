@@ -29,7 +29,7 @@
                                         <li>
                                             <router-link to="/blog">Blog</router-link>
                                         </li>
-                                        <li><a href="index-2.html">Home - 02</a></li>
+                                        <li><router-link to="/create-post">Create Post</router-link></li>
                                         <li><a href="index-3.html">Home - 03</a></li>
                                     </ul>
                                 </li>
