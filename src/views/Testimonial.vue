@@ -1,26 +1,25 @@
 <template>
-    <div class="portfolio">
+    <div class="testimonial">
         <PreLoader />
         <PageTitle />
-        <PortfolioArea />
+        <TestimonialArea />
         <Footer />
     </div>
 </template>
-
 
 <script>
     import PreLoader from '@/components/home/PreLoader'
     import MyComponent from '@/mixins/Head.js'
     import PageTitle from '@/components/about/PageTitle.vue'
-    import PortfolioArea from '@/components/portfolio/PortfolioArea.vue'
+    import TestimonialArea from '@/components/testimonial/TestimonialArea.vue'
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'Portfolio',
+        name: 'Testimonial',
         components: {
             PreLoader,
             PageTitle,
-            PortfolioArea,
+            TestimonialArea,
             Footer
         },
         mixins:[MyComponent]

@@ -1,30 +1,33 @@
 <template>
-    <div class="portfolio">
+    <div class="about">
         <PreLoader />
         <PageTitle />
-        <PortfolioArea />
+        <PricingArea />
+        <PricingArea2 />
         <Footer />
     </div>
 </template>
-
 
 <script>
     import PreLoader from '@/components/home/PreLoader'
     import MyComponent from '@/mixins/Head.js'
     import PageTitle from '@/components/about/PageTitle.vue'
-    import PortfolioArea from '@/components/portfolio/PortfolioArea.vue'
+    import PricingArea from '@/components/pricing/PricingArea.vue'
+    import PricingArea2 from '@/components/pricing/PricingArea2.vue'
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'Portfolio',
+        name: 'Pricing',
+        mixins: [MyComponent],
         components: {
             PreLoader,
             PageTitle,
-            PortfolioArea,
+            PricingArea,
+            PricingArea2,
             Footer
         },
-        mixins:[MyComponent]
     }
+
 </script>
 
 
@@ -35,4 +38,5 @@
     import '../assets/css/slicknav.css'
     import '../assets/css/owl.carousel.css'
     import '../assets/css/bootstrap.min.css'
+
 </style>

@@ -18,7 +18,7 @@
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'Portfolio',
+        name: 'Contact',
         components: {
             PreLoader,
             PageTitle,

@@ -52,7 +52,7 @@
 
 
     export default {
-        name: 'comingSoon',
+        name: 'ComingSoon',
         components: {
 
         },
