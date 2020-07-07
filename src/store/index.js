@@ -19,7 +19,7 @@ export default new Vuex.Store({
       state.posts = posts
     },
 
-    setIdea (state, updatedPost) {
+    setPost (state, updatedPost) {
       Object.assign(
         state.posts.find(post => post._id === updatedPost._id, updatedPost))
     }

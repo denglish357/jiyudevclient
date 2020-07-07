@@ -7,7 +7,7 @@
                             <div class="col-lg-6">
                                 <div class="slide-content">
                                     <h2>I am a Freelance Digital Product Developer/Ux Designer.</h2>
-                                    <p>Your website is the foundation for all your digital activities. It absolutely must be the best representation of your company and encompass your brand’s personality and unique value proposition.</p>
+                                    <p>Your website is the foundation for all your digital activities. It absolutely must be the best representation of your company and encompass your brandï¿½s personality and unique value proposition.</p>
                                     <div class="slide-btn">
                                         <a href="#" class="button">Learn More</a>
                                         <a href="#" class="button-2">Live Preview</a>

@@ -13,7 +13,7 @@
     import Footer from '@/components/home/Footer.vue'
 
     export default {
-        name: 'Blog',
+        name: 'Post',
         mixins: [MyComponent],
         components: {
             PreLoader,

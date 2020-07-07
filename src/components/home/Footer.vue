@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="copyright-txt">
-                        © 2020 Jiyu Dev. All Rights Reserved.
+                        ï¿½ 2020 Jiyu Dev. All Rights Reserved.
                     </div>
                 </div>
                 <div class="col-lg-6 text-right">
