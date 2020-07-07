@@ -15,6 +15,9 @@ export default new Vuex.Store({
     setForm (state, { key, value }) {
       state.form[key] = value
     },
+    setMainTitle(state, {key, value}){
+     state.form[key] = value
+    },
     setPosts (state, posts) {
       state.posts = posts
     },

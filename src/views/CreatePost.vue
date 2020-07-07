@@ -2,7 +2,7 @@
     <div class="create-post">
         <h1>Create an blog</h1>
         <v-form @submit="_submitPost">
-            <v-col cols="12" sm="6" md="10" @change="_setForm">
+            <v-col cols="12" sm="6" md="10" @change="_setMainTitle">
                 <v-text-field solo label="Main Title"></v-text-field>
             </v-col>
             <v-col cols="12" md="10">
@@ -25,6 +25,7 @@
         name: "CreatePost",
         methods: {
             ...mapMutations(['setForm']),
+            ...mapMutations(['setMainTitle']),
             ...mapActions(['createPost']),
             _setForm(value) {
                 this.setForm({
@@ -35,6 +36,12 @@
             _submitPost(event) {
                 event.preventDefault()
                 this.createPost()
+            },
+            _setMainTitle(value) {
+                this.setMainTitle({
+                    key: 'mainTitle',
+                    value
+                })
             }
         }
     }
