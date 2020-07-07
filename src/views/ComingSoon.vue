@@ -73,13 +73,10 @@
 
 
 <style scoped>
-    #menu{
-        display:none;
+    .coming-soon{
+        padding: 0;
     }
-    body > div.slicknav_menu{
-        display: none !important;
-    }
-    .header{
-        display: none !important;
+    .coming-soon-box{
+        margin-bottom: 10.5em;
     }
 </style>
