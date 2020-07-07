@@ -1,6 +1,6 @@
 <template>
   <div class="Hero hero-slider">
-            <div class="single-slide" style="background-image: url(assets/img/slide1.jpg)">
+            <div class="single-slide" style="background: lightgrey">
                 <div class="inner">
                     <div class="container">
                         <div class="row">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slide" style="background-image: url(assets/img/slide2.jpg)">
+            <div class="single-slide" style="background: lightgrey">
                 <div class="inner">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slide" style="background-image: url(assets/img/slide3.jpg)">
+            <div class="single-slide" style="background: lightgrey">
                 <div class="inner">
                     <div class="container">
                         <div class="row">

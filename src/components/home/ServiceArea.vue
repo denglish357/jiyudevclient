@@ -3,7 +3,7 @@
     <div class="container">
         <div class="section-title">
             <h2>My Services</h2>
-            <p>I excel at integrating seamlessly into my clients’ teams, becoming their go-to contractor of choice.</p>
+            <p>I excel at integrating seamlessly into my clients teams, becoming their go-to contractor of choice.</p>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 single-service">

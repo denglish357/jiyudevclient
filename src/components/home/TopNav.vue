@@ -4,9 +4,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-sm-3 logo-column">
-                        <a href="index.html" class="logo">
+                        <router-link to="/" class="logo">
                             <img src="assets/img/log.png" alt="logo">
-                        </a>
+                        </router-link>
                     </div>
                     <div class="col-6 col-sm-9 nav-column clearfix">
                         <div class="right-nav">
@@ -24,7 +24,7 @@
                         <nav id="menu" class="d-none d-lg-block">
                             <ul>
                                 <li class="current-menu-item has-child">
-                                    <a href="index.html">Home</a>
+                                    <router-link to="/">Home</router-link>
                                     <ul class="sub-menu">
                                         <li><a href="index.html">Home - 01</a></li>
                                         <li><a href="index-2.html">Home - 02</a></li>

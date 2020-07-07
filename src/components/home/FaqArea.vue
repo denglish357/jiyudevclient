@@ -36,7 +36,7 @@
             </div>
             <div class="col-md-6">
                 <div class="faq-img text-center">
-                    <img src="assets/img/fag-img.png" alt="faq">
+                    <img src="assets/img/fag-img.jpg" alt="faq">
                 </div>
             </div>
         </div>

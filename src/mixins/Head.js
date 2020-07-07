@@ -21,14 +21,10 @@ module.exports = {
             }
     ],
         // link tags
-        /*link: [
-          { rel: '', href: 'http://example.com/#!/contact/', id: 'canonical' },
-          { rel: 'author', href: 'author', undo: false }, // undo property - not to remove the element
-          { rel: 'icon', href: require('./path/to/icon-16.png'), sizes: '16x16', type: 'image/png' },
-          // with shorthand
-          { r: 'icon', h: 'path/to/icon-32.png', sz: '32x32', t: 'image/png' },
+        link: [
+          { rel: 'stylesheet', href: 'https://friconix.com/cdn/friconix.js', id: 'friconix' }
           // ...
-        ],*/
+        ],
         script: [
             {
                 type: 'text/javascript',
