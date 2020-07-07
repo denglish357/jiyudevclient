@@ -85,11 +85,11 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <div class="footer-nav">
-                        <a href="#">Home</a>
-                        <a href="#">Portfolio</a>
+                        <router-link to="/">Home</router-link>
+                        <router-link to="/portfolio">Portfolio</router-link>
                         <a href="#">Pages</a>
                         <a href="#">Shortcode</a>
-                        <a href="#">Blog</a>
+                        <router-link to="/blog">Blog</router-link>
                     </div>
                 </div>
             </div>

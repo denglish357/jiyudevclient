@@ -1,6 +1,6 @@
 <template>
-  <div class="TopNav">
-     <header>
+    <div class="TopNav">
+        <header>
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-sm-3 logo-column">
@@ -26,62 +26,91 @@
                                 <li class="current-menu-item has-child">
                                     <router-link to="/">Home</router-link>
                                     <ul class="sub-menu">
-                                        <li><a href="index.html">Home - 01</a></li>
+                                        <li>
+                                            <router-link to="/blog">Blog</router-link>
+                                        </li>
                                         <li><a href="index-2.html">Home - 02</a></li>
                                         <li><a href="index-3.html">Home - 03</a></li>
                                     </ul>
                                 </li>
-               <li><router-link to="/about">About</router-link></li>
+                                <li>
+                                    <router-link to="/about">About</router-link>
+                                </li>
 
-<li><router-link to="/portfolio">Portfolio</router-link></li>
+                                <li>
+                                    <router-link to="/portfolio">Portfolio</router-link>
+                                </li>
                                 <li class="has-child">
                                     <a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="404.html">404</a></li>
-                                        <li><router-link to="/about">About</router-link></li>
-                                        <li><router-link to="/career">Career</router-link></li>
-                                        <li><router-link to="/coming-soon">Coming Soon</router-link></li>
-                                        <li><router-link to="/contact">Contact</router-link></li>
-                                        <li><router-link to="/faq">Faq</router-link></li>
-                                        <li><router-link to="/portfolio">Portfolio</router-link></li>
-                                        <li><router-link to="/pricing">Pricing</router-link></li>
-                                        <li><router-link to="/service">Service</router-link></li>
-                                        <li><router-link to="/team">Team</router-link></li>
-                                        <li><router-link to="/testimonial">Testimonial</router-link></li>
+                                        <li>
+                                            <router-link to="/about">About</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/career">Career</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/coming-soon">Coming Soon</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/contact">Contact</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/faq">Faq</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/portfolio">Portfolio</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/pricing">Pricing</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/service">Service</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/team">Team</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/testimonial">Testimonial</router-link>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><router-link to="/contact">Contact</router-link></li>
+                                <li>
+                                    <router-link to="/contact">Contact</router-link>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-        </header> 
+        </header>
 
-  
-    
-    
-  </div>
+
+
+
+    </div>
 </template>
 
 
 
 <script>
-/*import $ from "jquery";
+    /*import $ from "jquery";
 import slick from "slick"*/
 
-export default {
-  name: 'TopNav',
-    created (){
-      
-    },
-mounted () {
+    export default {
+        name: 'TopNav',
+        created() {
 
-},
-   props: {
-    
-  }
-}
+        },
+        mounted() {
+
+        },
+        props: {
+
+        }
+    }
+
 </script>
 
 
